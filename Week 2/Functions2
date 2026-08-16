@@ -1,0 +1,14 @@
+def square(num):
+    return num * num
+
+def sum(a):
+    res1 = square(a)
+    res2 = square(a)
+    return res1 + res2
+
+def main():
+    num1 = int(input("Enter a number: "))
+    result = sum(num1)
+    print(result)
+main()
+

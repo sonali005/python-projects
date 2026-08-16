@@ -1,0 +1,32 @@
+import turtle
+
+def square(px, ang, color):
+    turtle.speed(1)
+    turtle.pensize(10)
+    turtle.fillcolor(color)
+    turtle.pencolor('white')
+    turtle.bgcolor('pink')
+    #to fill the color in the square
+    turtle.begin_fill()
+    turtle.forward(px)
+    turtle.left(ang)
+    turtle.forward(px)
+    turtle.left(ang)
+    turtle.forward(px)
+    turtle.left(90)
+    turtle.forward(px)
+    turtle.left(90)
+    turtle.end_fill()
+    
+    
+
+def main():
+    pixels = 100
+    angle = 90
+    color = input("Enter a color: ")
+    square(pixels, angle, color)
+
+    pixels = 70
+    angle = 90
+    square(pixels, angle, color)
+main()

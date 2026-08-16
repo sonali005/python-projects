@@ -1,0 +1,26 @@
+import turtle
+
+def draw_circle(x, y, radius, fill_color):
+   
+    turtle.penup()            # Lift the pen to move without drawing
+    turtle.goto(x, y - radius)  # Move to the start position of the circle
+    turtle.pendown()          # Put the pen down to start drawing
+
+    turtle.fillcolor(fill_color)  # Set the fill color
+    turtle.begin_fill()       # Start filling the circle
+    turtle.circle(radius)     # Draw the circle
+    turtle.end_fill()         # End filling the circle
+
+def main():
+    turtle.speed(1)  # Set the speed of the turtle
+
+    # Draw several circles with different parameters
+    draw_circle(-100, 100, 50, 'red')
+    draw_circle(0, 0, 75, 'blue')
+    draw_circle(100, -100, 25, 'green')
+
+    turtle.done()  # Finish the turtle graphics
+
+main()
+
+   

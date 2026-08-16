@@ -1,0 +1,46 @@
+#question 1 
+def multiply(x, y):
+    return x * y
+
+def main():
+    result = multiply(int(3.5), 4 + 1)
+    print(result)
+
+main()
+
+#question 2 
+def double(x):
+    return int(x*2)
+
+def main():
+    print(double(7.2))
+main()
+
+#question 3
+def birthday(name,age):
+    print("Hello",name,"!","Happy", str(age),"th birthday!")
+
+def main():
+    birthday('Alice', 25)
+main()
+
+#question 4
+def calculate(x, y):
+    return (x + y) // 2
+
+def main():
+    result = calculate(7, 3.0)
+    print(result)
+main()
+
+
+#question 5
+def add(x, y):
+    return (x),(y)
+
+def subtract(x, y):
+    return float(x) - float(y)
+def main():
+    print(add('10.5', 3))
+    print(subtract('10.5', 3))
+main()
